@@ -1,0 +1,221 @@
+/*colors*/
+$bg: #777;
+$shap: #333;
+$a: #17c73d;
+$color_royal_purple_approx: rebeccapurple;
+$color_back: #17c73d;
+$color_back_prozr: #17c73d;
+$color_knopki: #17c73d;
+$color_fuscous_gray_approx: #17c73d;
+$color_punkt: #17c73d;
+$color_caret: #17c73d;
+$color_text: #17c73d;
+$color_diesel_approx: #100000;
+$white: #fff;
+$color_suva_gray_approx: #888;
+/*Цвета для 2-го слайдера точек внизу*/
+$silver: black;
+$color_mine_shaft_approx: #333333;
+$back: #100000;
+$kar:#100000;
+$kar2:#100000;
+/*Общий фон*/
+body {
+	background-color: $bg;
+}
+/*Shapka*/
+.img-responsive{
+	display: block;
+	max-width: 100%;
+	height: 100%;
+}
+#Logo {
+	position: relative;
+	min-height: 1px;
+	padding-right: 0;
+	padding-left: 0;
+}
+a {
+	color: $a;
+	text-decoration: none;
+}
+.otstup {
+	margin: 40px;
+}
+.test {
+	color: $color_royal_purple_approx;
+}
+.Shapka div {
+	background: $shap;
+	color: $a;
+	height: 100px;
+}
+.Shapka.row{
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-right: 0px;
+	padding-right: 0px;
+}
+
+/*Navbar*/
+.navbar{
+	padding-right:15px; 
+}
+.dropdown-menu {
+	background: $color_back;
+	background: $color_back_prozr;/*Цвет фона выподающего меню*/
+}
+.navbar-inverse .navbar-nav > li > a {/*Цвет пунктов меню при наведении и нажатии*/
+	&:hover {
+		color: $color_knopki;
+	}
+	&:focus {
+		color: $color_knopki;
+	}
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {/*Цвет каретки и цвет пунктов при наведении и нажатии*/
+	border-top-color: $color_punkt;
+	border-bottom-color: $color_caret;
+} 
+.caret-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-left: 4px solid;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+/*Слайдер*/
+.slider1{
+	margin-top: -20px;
+}
+.carousel {
+
+	//Instead of the line below you could use @include perspective($p)
+	perspective: 1200px;
+	background: $color_diesel_approx;
+	font-size: 0;
+	padding-top: 20px; 
+	padding-bottom: 40px;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	~ span {
+		color: $white;
+		margin: 5%;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 2rem;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.6s color;
+		position: relative;
+		margin-top: -6rem;
+		border-bottom: none;
+		line-height: 0;
+		&:hover {
+			color: $color_suva_gray_approx;
+			cursor: pointer;
+		}
+	}
+}
+figure#spinner {
+	//Instead of the line below you could use @include transform-style($style)
+	transform-style: preserve-3d;
+	height: 300px;
+	//Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+	transform-origin: 50% 50% -500px;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: 1s;
+	img {
+		width: 40%;
+		max-width: 425px;
+		position: absolute;
+		left: 40%;
+		//Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+		transform-origin: 50% 50% -500px;
+		outline: 1px solid transparent;
+		&:nth-child(1) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(0deg);
+		}
+		&:nth-child(2) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-45deg);
+		}
+		&:nth-child(3) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-90deg);
+		}
+		&:nth-child(4) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-135deg);
+		}
+		&:nth-child(5) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-180deg);
+		}
+		&:nth-child(6) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-225deg);
+		}
+		&:nth-child(7) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-270deg);
+		}
+		&:nth-child(8) {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateY(-315deg);
+		}
+	}
+}
+/*Конец Слайдера*/
+
+/*Ещё один Слайдер*/
+.slider2.container-fluid {
+	margin-top: -40px;
+	padding-left: 0px;
+	padding-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.well{
+	background:$back;
+	border: 0px solid #e3e3e3;
+}
+.mycarousel {
+	margin-bottom: 0;
+}
+.carousel-control {
+	left: -12px;
+	&.right {
+		right: -12px;
+	}
+}
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0;
+	margin-right: -19px;
+	li {
+		background: $silver;
+	}
+	.active {
+		background: $color_mine_shaft_approx;
+	}
+}
+/*Конец ещё одного слайдера*/
+
+/*Начало картинок*/
+.kartinki.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.kart.container-fluid{
+	margin-top: -23px;
+	padding-top: 20px;
+	height: 340px;
+	background: $kar2;
+}
+/*Конец картинок*/
+

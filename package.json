@@ -1,0 +1,28 @@
+{
+  "name": "Grunt",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-critical": "latest",
+    "grunt-csso": "latest",
+    "grunt-fixmyjs": "^0.3.0",
+    "grunt-include-replace": "^3.0.0",
+    "grunt-newer": "latest",
+    "grunt-postcss": "latest",
+    "grunt-processhtml": "latest",
+    "grunt-uncss": "^0.4.3",
+    "grunt-wiredep": "latest",
+    "time-grunt": "latest",
+    "grunt-uncss": "latest",
+    "grunt-postcss": "latest",
+    "grunt-sitemap": "latest",
+    "grunt-contrib-imagemin": "latest"
+  }
+}

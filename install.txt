@@ -1,0 +1,37 @@
+установить node, railsinstaller
+обновить ruby, npm, bower
+npm install grunt-cli -g
+
+создать package.json
+npm install - установка модулей Grunt
+npm install cssgrace -ie префиксы
+
+gem install compass - установка Compass
+
+compass init - установка конфигурации (config.rb) //компилятор sass
+
+bower install - установка пакетов Bower //скачивает пакеты (jquare, bootstrap)
+
+dploy install - для связи с сервером
+
+dploy <name> - для закачки на сервер (при применении залить на github)
+
+compass watch
+
+
+    "grunt-autoprefixer": "^3.0.3", //автоматическая порстановка префиксов к CSS
+    "grunt-contrib-concat": "latest", //конкатенация файлов
+    "grunt-contrib-copy": "latest", //копирование файлов
+    "grunt-contrib-htmlmin": "latest", // минификация html
+    "grunt-contrib-uglify": "latest", //минификация js
+    "grunt-contrib-watch": "latest", //следит за изменениями в файлах
+    "grunt-critical": "latest", //
+    "grunt-csso": "latest", //минификация css
+    "grunt-include-replace": "^3.0.0", //
+    "grunt-newer": "latest", //отслеживает файлы которые изменились
+    "grunt-postcss": "latest",
+    "grunt-processhtml": "latest",
+    "grunt-uncss": "latest", //удаление неиспользцемых css свойств
+    "grunt-wiredep": "latest",
+    "time-grunt": "latest", //отслеживает время выполнения задач
+    "grunt-sitemap": "latest" //генерирует карту сайта
